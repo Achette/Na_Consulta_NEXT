@@ -6,5 +6,9 @@ type ButtonProps = {
 }
 
 export const Button = ({ title, size }: ButtonProps) => {
-  return <ButtonContainer variant={size}>{title}</ButtonContainer>
+  return (
+    <ButtonContainer variant={size} data-testid="button-container">
+      {title}
+    </ButtonContainer>
+  )
 }
