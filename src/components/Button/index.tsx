@@ -1,5 +1,10 @@
 import { ButtonContainer } from './styles'
 
-export const Button = () => {
-  return <ButtonContainer type="submit">Pesquisar</ButtonContainer>
+type ButtonProps = {
+  title: string
+  variant: 'small' | 'medium' | 'large'
+}
+
+export const Button = ({ title, variant }: ButtonProps) => {
+  return <ButtonContainer variant={variant}>{title}</ButtonContainer>
 }
