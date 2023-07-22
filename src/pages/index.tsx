@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Header } from 'src/components/Header'
 import { Button } from 'src/components/Button'
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Na Consulta</h1>
+        <Header />
         <Button title="Pesquisar" size="small" />
       </main>
     </div>
