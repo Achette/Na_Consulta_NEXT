@@ -2,9 +2,9 @@ import { ButtonContainer } from './styles'
 
 type ButtonProps = {
   title: string
-  variant: 'small' | 'medium' | 'large'
+  size: 'small' | 'medium' | 'large'
 }
 
-export const Button = ({ title, variant }: ButtonProps) => {
-  return <ButtonContainer variant={variant}>{title}</ButtonContainer>
+export const Button = ({ title, size }: ButtonProps) => {
+  return <ButtonContainer variant={size}>{title}</ButtonContainer>
 }

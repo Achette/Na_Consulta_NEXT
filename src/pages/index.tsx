@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1>Na Consulta</h1>
-        <Button title="Pesquisar" variant="small" />
+        <Button title="Pesquisar" size="small" />
       </main>
     </div>
   )
