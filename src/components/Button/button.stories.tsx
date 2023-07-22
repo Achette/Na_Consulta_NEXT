@@ -12,20 +12,20 @@ export default meta
 export const Primary: StoryObj<typeof Button> = {
   args: {
     title: 'Pesquisar',
-    variant: 'small',
+    size: 'small',
   },
 }
 
 export const Medium: StoryObj<typeof Button> = {
   args: {
     title: 'Pesquisar',
-    variant: 'medium',
+    size: 'medium',
   },
 }
 
 export const Large: StoryObj<typeof Button> = {
   args: {
     title: 'Pesquisar',
-    variant: 'large',
+    size: 'large',
   },
 }
