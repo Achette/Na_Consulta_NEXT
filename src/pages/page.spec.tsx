@@ -5,7 +5,7 @@ describe('first test', () => {
   it('should render first test', () => {
     render(<Home />)
 
-    const heading = screen.getByText('Na Consulta')
+    const heading = screen.getByText('NaConsulta')
     expect(heading).toBeInTheDocument()
   })
 })
