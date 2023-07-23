@@ -19,11 +19,14 @@ export const Header = () => {
   const [extendNavbar, setExtendNavbar] = React.useState<boolean>(false)
 
   return (
-    <NavbarContainer extendNavbar={extendNavbar}>
+    <NavbarContainer
+      extendNavbar={extendNavbar}
+      data-test-id="header-container"
+    >
       <NavbarInnerContainer>
         <LeftContainer>
           <LogoContainer>
-            <Logo />
+            <Logo data-testid="logo" />
             <LogoText>NaConsulta</LogoText>
           </LogoContainer>
         </LeftContainer>
