@@ -20,7 +20,7 @@ export const Header = () => {
 
   return (
     <NavbarContainer
-      extendNavbar={extendNavbar}
+      $extendNavbar={extendNavbar}
       data-test-id="header-container"
     >
       <NavbarInnerContainer>
