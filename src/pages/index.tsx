@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Header } from 'src/components/Header'
-import { Button } from 'src/components/Button'
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
 
       <main>
         <Header />
-        <Button title="Pesquisar" size="small" />
       </main>
     </div>
   )
