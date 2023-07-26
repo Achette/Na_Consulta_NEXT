@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 type ColorGridProps = {
   variant:
-    | '#fff'
+    | '#FFF'
     | '#000'
     | '#495057'
     | '#F7F9F9'

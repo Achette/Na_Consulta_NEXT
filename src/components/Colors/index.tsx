@@ -7,7 +7,7 @@ export const ColorsGrid = () => {
     return (
       <ColorsGridContainer variant={color} key={key}>
         <ColorsGridContent
-          variant={getContrast(color, '#fff') < 3.5 ? '#000' : '#fff'}
+          variant={getContrast(color, '#FFF') < 3.5 ? '#000' : '#FFF'}
         >
           <strong>{key}</strong>
           <span>{color}</span>
