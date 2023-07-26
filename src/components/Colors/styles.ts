@@ -16,12 +16,12 @@ export const ColorsGridContainer = styled.div<ColorGridProps>`
   background: ${(props) => props.variant};
 `
 
-export const ColorsGridContent = styled.div`
+export const ColorsGridContent = styled.div<ColorGridProps>`
   display: flex;
   justify-content: space-between;
 
   strong,
   span {
-    color: #fff;
+    color: ${(props) => props.variant};
   }
 `
