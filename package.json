@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "storybook": "storybook dev -p 6006"
+    "test:coverage": "jest --runInBand --coverage",
+    "storybook": "storybook dev -p 6006",
+    "build": "next build"
   },
   "dependencies": {
     "axios": "^1.4.0",
