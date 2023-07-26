@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Header } from 'src/components/Header'
-import { Button } from 'src/components/Button'
+import { MainContainer } from './styles'
+import { ServiceCardSection } from 'src/components/CardsGrid'
 
 export default function Home() {
   return (
@@ -11,10 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <MainContainer>
         <Header />
-        <Button title="Pesquisar" size="small" />
-      </main>
+        <ServiceCardSection />
+      </MainContainer>
     </div>
   )
 }
