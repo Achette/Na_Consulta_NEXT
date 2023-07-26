@@ -18,6 +18,6 @@ body {
 }
 
 body, input, textarea, button {
-    font: 400 1rem Roboto, sans-serif;
+    font: 400 1rem Poppins, sans-serif;
 }
 `
