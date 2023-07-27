@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const NavbarContainer = styled.nav<{ $extendNavbar?: boolean }>`
   width: 100%;
   height: ${(props) => (props.$extendNavbar ? '100vh' : '5rem')};
-  background: #3dccb7;
+  background: ${(props) => props.theme['green-300']};
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
