@@ -9,7 +9,20 @@ export const HeaderSearchContainer = styled.div`
   border: 1px solid tomato;
   color: ${(props) => props.theme.white};
 
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 1400px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 1400px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,9 +33,17 @@ export const HeadingContainer = styled.div`
   text-align: start;
   border: 1px solid purple;
 
+  @media (min-width: 768px) {
+    margin-top: 3rem;
+  }
+
   @media (min-width: 992px) {
-    width: 90%;
-    margin-top: 2rem;
+    width: 60rem;
+    margin-top: 5rem;
+  }
+
+  @media (min-width: 1400px) {
+    margin-left: -20rem;
   }
 `
 
@@ -30,12 +51,20 @@ export const HeaderSearchTitle = styled.h2`
   font-size: 1.25rem;
   font-weight: 700;
   line-height: normal;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 `
 
 export const HeaderSearchParagraph = styled.p`
   font-size: 1rem;
   font-weight: 300;
   line-height: normal;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 `
 
 export const InputSearchContainer = styled.div`
@@ -51,8 +80,13 @@ export const InputSearchContainer = styled.div`
   margin-top: 2rem;
 
   @media (min-width: 992px) {
-    width: 100%;
+    width: min-content;
     flex-direction: row;
+  }
+
+  @media (min-width: 1400px) {
+    margin-left: -20rem;
+    justify-content: center;
   }
 `
 
@@ -75,5 +109,22 @@ export const Input = styled.input`
   @media (min-width: 992px) {
     flex-direction: row;
     width: 23.625rem;
+  }
+`
+
+export const ImageContainer = styled.div`
+  width: min-content;
+  border: 1px solid orange;
+  position: relative;
+  margin-top: -25rem;
+  z-index: 0;
+
+  img {
+    position: relative;
+    z-index: -1;
+  }
+
+  @media (max-width: 1400px) {
+    display: none;
   }
 `
