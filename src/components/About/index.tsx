@@ -1,10 +1,17 @@
 import Image from 'next/image'
-import { AboutContainer, AboutContent, ImageContainer } from './styles'
+import {
+  AboutContainer,
+  AboutContent,
+  ImageContainer,
+  TextAbout,
+  TextAboutSpan,
+  TitleAbout,
+} from './styles'
 import { about } from 'src/mock/about/textAbout'
 
 export const AboutSection = () => {
   return (
-    <AboutContainer data-testid="about-container">
+    <AboutContainer data-testid="about-container" id="about">
       <ImageContainer>
         <Image
           src="/assets/doctor.png"
@@ -15,9 +22,9 @@ export const AboutSection = () => {
         />
       </ImageContainer>
       <AboutContent data-testid="about-content">
-        <span>Sobre Nós</span>
-        <h2>Quem somos e porque existimos</h2>
-        <p>{about}</p>
+        <TextAboutSpan>Sobre Nós</TextAboutSpan>
+        <TitleAbout>Quem somos e porque existimos</TitleAbout>
+        <TextAbout>{about}</TextAbout>
       </AboutContent>
     </AboutContainer>
   )

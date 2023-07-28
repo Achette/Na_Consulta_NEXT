@@ -46,21 +46,22 @@ export const AboutContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+`
+export const TextAboutSpan = styled.span`
+  color: ${(props) => props.theme['green-300']};
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+`
+export const TitleAbout = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
 
-  span {
-    color: ${(props) => props.theme['green-300']};
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: 0.05rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
   }
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
-    }
-  }
+`
+export const TextAbout = styled.p`
+  color: ${(props) => props.theme['green-700']};
 `
