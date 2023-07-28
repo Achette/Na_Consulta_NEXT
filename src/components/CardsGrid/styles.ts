@@ -25,14 +25,14 @@ export const ServiceCardHeader = styled.header`
   align-items: center;
   gap: 1rem;
 `
-export const SpanServiceCard = styled.span`
+export const ServiceCardSpan = styled.span`
   color: ${(props) => props.theme['green-300']};
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
 `
 
-export const TitleServiceCard = styled.h2`
+export const ServiceCardTitle = styled.h2`
   color: ${(props) => props.theme['green-700']};
   font-size: 2rem;
   font-weight: 700;
