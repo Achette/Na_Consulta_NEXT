@@ -57,6 +57,7 @@ export const TextAboutSpan = styled.span`
 export const TitleAbout = styled.h2`
   font-size: 2rem;
   font-weight: 700;
+  line-height: 1.2;
 
   @media (max-width: 768px) {
     font-size: 1.5rem;
