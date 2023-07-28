@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { CardStyle } from './styles'
+import { CardStyle, CardHeader, CardTitle, CardText } from './styles'
 
 type CardProps = {
   icon: ReactNode
@@ -10,11 +10,11 @@ type CardProps = {
 export const Card = ({ icon, title, paragraph }: CardProps) => {
   return (
     <CardStyle data-testid="card">
-      <header>
+      <CardHeader>
         {icon}
-        <strong>{title}</strong>
-      </header>
-      <p>{paragraph}</p>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardText>{paragraph}</CardText>
     </CardStyle>
   )
 }

@@ -24,23 +24,22 @@ export const ServiceCardHeader = styled.header`
   justify-content: center;
   align-items: center;
   gap: 1rem;
+`
+export const SpanServiceCard = styled.span`
+  color: ${(props) => props.theme['green-300']};
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+`
 
-  span {
-    color: ${(props) => props.theme['green-300']};
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.05rem;
-  }
+export const TitleServiceCard = styled.h2`
+  color: ${(props) => props.theme['green-700']};
+  font-size: 2rem;
+  font-weight: 700;
 
-  h2 {
-    color: ${(props) => props.theme['green-700']};
-    font-size: 2rem;
-    font-weight: 700;
-
-    @media (max-width: 768px) {
-      text-align: center;
-      font-size: 1.5rem;
-    }
+  @media (max-width: 768px) {
+    text-align: center;
+    font-size: 1.5rem;
   }
 `
 
