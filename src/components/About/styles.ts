@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AboutContainer = styled.section`
+export const ContainerAbout = styled.section`
   width: 100%;
   background: ${(props) => props.theme['green-100']};
   padding: 10rem 10rem;
@@ -41,7 +41,7 @@ export const ImageContainer = styled.div`
   }
 `
 
-export const AboutContent = styled.div`
+export const ContentAbout = styled.div`
   width: 35.8rem auto;
   display: flex;
   flex-direction: column;

@@ -1,11 +1,11 @@
 import React from 'react'
 import { render, screen } from '@testing-library/react'
 
-import { AboutSection } from '.'
+import { SectionAbout } from '.'
 
-describe('AboutSection', () => {
+describe('SectionAbout', () => {
   it('renders the about container', () => {
-    render(<AboutSection />)
+    render(<SectionAbout />)
 
     const aboutContainer = screen.getByTestId('about-container')
 
@@ -13,23 +13,30 @@ describe('AboutSection', () => {
   })
 
   it('renders the image', () => {
-    render(<AboutSection />)
+    render(<SectionAbout />)
 
     const image = screen.getByTestId('image')
 
     expect(image).toBeInTheDocument()
+    expect(image).toHaveAttribute('alt', 'Doutor feliz com pacientes')
   })
 
   it('renders the about content', () => {
-    render(<AboutSection />)
+    render(<SectionAbout />)
 
     const aboutContent = screen.getByTestId('about-content')
+    const textAboutSpan = screen.getByTestId('text-about-span')
+    const titleAbout = screen.getByTestId('title-about')
+    const textAbout = screen.getByTestId('text-about')
 
     expect(aboutContent).toBeInTheDocument()
+    expect(textAboutSpan).toBeInTheDocument()
+    expect(titleAbout).toBeInTheDocument()
+    expect(textAbout).toBeInTheDocument()
   })
 
   it('renders the heading inside the about content', () => {
-    render(<AboutSection />)
+    render(<SectionAbout />)
 
     const heading = screen.getByRole('heading', {
       level: 2,
