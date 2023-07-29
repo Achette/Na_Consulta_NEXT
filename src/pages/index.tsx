@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { Header } from 'src/components/Header'
 import { MainContainer } from './styles'
+import { Header } from 'src/components/Header'
 import { ServiceCardSection } from 'src/components/CardsGrid'
 import { SectionAbout } from 'src/components/About'
 
