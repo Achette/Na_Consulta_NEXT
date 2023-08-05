@@ -1,4 +1,4 @@
-import { defaultTheme } from 'src/styles/theme/default'
+import { defaultTheme } from '@/styles/theme/default'
 import { ColorsGridContainer, ColorsGridContent } from './styles'
 import { getContrast } from 'polished'
 

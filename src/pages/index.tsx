@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { MainContainer } from './styles'
-import { Header } from 'src/components/Header'
-import { ServiceCardSection } from 'src/components/CardsGrid'
-import { SectionAbout } from 'src/components/About'
+import { Header } from '@/components/Header'
+import { ServiceCardSection } from '@/components/CardsGrid'
+import { SectionAbout } from '@/components/About'
 
 export default function Home() {
   return (

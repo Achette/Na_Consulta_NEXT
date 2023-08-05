@@ -5,7 +5,7 @@ import {
   ServiceCardSpan,
   ServiceCardTitle,
 } from './styles'
-import { Card } from '../Card'
+import { Card } from '@/components/Card'
 import { CalendarCheck, Search, ThumbsUp } from 'lucide-react'
 
 export const ServiceCardSection = () => {

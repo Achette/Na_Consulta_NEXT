@@ -7,7 +7,7 @@ import {
   TextAboutSpan,
   TitleAbout,
 } from './styles'
-import { about } from 'src/mock/about/textAbout'
+import { about } from '@/mock/about/textAbout'
 
 export const SectionAbout = () => {
   return (
@@ -17,7 +17,7 @@ export const SectionAbout = () => {
           src="/assets/doctor.png"
           alt="Doutor feliz com pacientes"
           layout="fill"
-          priority
+          priority={false}
           data-testid="image"
         />
       </ImageContainer>
