@@ -12,19 +12,11 @@ import {
   OpenLinksButton,
   RightContainer,
 } from './styles'
-import { OutlineButton } from '../OutlineButton'
-import { ContextExtendNavbar } from 'src/context/extend-navbar'
 import { Logo } from '../Logo'
+import { OutlineButton } from '../OutlineButton'
 
 export const Header = () => {
-  const [navbar, setNavbar] = React.useState<boolean>(false)
-
-  const { extendNavbar, setExtendNavbar } =
-    React.useContext(ContextExtendNavbar)
-
-  React.useEffect(() => {
-    setExtendNavbar(navbar)
-  }, [navbar, setExtendNavbar])
+  const [extendNavbar, setExtendNavbar] = React.useState<boolean>(false)
 
   return (
     <NavbarContainer
@@ -47,7 +39,7 @@ export const Header = () => {
             <OutlineButton />
             <OpenLinksButton
               onClick={() => {
-                setNavbar((prev) => !prev)
+                setExtendNavbar((prev) => !prev)
               }}
             >
               {extendNavbar ? <>&#10005;</> : <> &#8801;</>}

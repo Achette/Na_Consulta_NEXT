@@ -12,16 +12,16 @@ import {
 
 export const SearchHeader = () => {
   return (
-    <HeaderSearchContainer>
+    <HeaderSearchContainer data-testid="header-search-container">
       <>
-        <HeadingContainer>
+        <HeadingContainer data-testid="heading-container">
           <HeaderSearchTitle>Procure por um especialista</HeaderSearchTitle>
           <HeaderSearchParagraph>
             O jeito fácil de agendar consultas médicas
           </HeaderSearchParagraph>
         </HeadingContainer>
 
-        <InputSearchContainer>
+        <InputSearchContainer data-testid="inputs-container">
           <Input placeholder="Médico, Serviço, Especialidade" />
           <Input placeholder="Local ex. São Paulo" />
           <Button title="Pesquisar" size="small" />
