@@ -28,7 +28,13 @@ export const SearchHeader = () => {
         </InputSearchContainer>
       </>
       <ImageContainer>
-        <Image src="/dotors.png" alt="Doctors image" width={500} height={360} />
+        <Image
+          src="/dotors.png"
+          alt="Doctors image"
+          width={500}
+          height={360}
+          data-testid="doctor-img"
+        />
       </ImageContainer>
     </HeaderSearchContainer>
   )
