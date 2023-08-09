@@ -7,6 +7,7 @@ type ColorGridProps = {
     | '#495057'
     | '#F7F9F9'
     | '#3DCCB729'
+    | '#47c4ab'
     | '#3DCCB7'
     | '#008F79'
     | '#004238'
