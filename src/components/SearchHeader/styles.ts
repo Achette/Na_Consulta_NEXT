@@ -6,8 +6,9 @@ export const HeaderSearchContainer = styled.div`
   background-color: ${(props) => props.theme['green-300']};
   margin-top: 5rem;
   padding: 5rem 0.25rem;
-  border: 1px solid tomato;
   color: ${(props) => props.theme.white};
+  position: relative;
+  z-index: -1;
 
   @media (max-width: 1200px) {
     display: flex;
@@ -31,7 +32,6 @@ export const HeaderSearchContainer = styled.div`
 export const HeadingContainer = styled.div`
   width: 80%;
   text-align: start;
-  border: 1px solid purple;
 
   @media (min-width: 768px) {
     margin-top: 3rem;
@@ -44,6 +44,8 @@ export const HeadingContainer = styled.div`
 
   @media (min-width: 1400px) {
     margin-left: -20rem;
+    position: relative;
+    z-index: 1;
   }
 `
 
@@ -68,7 +70,6 @@ export const HeaderSearchParagraph = styled.p`
 `
 
 export const InputSearchContainer = styled.div`
-  border: 1px solid gold;
   width: 80%;
   border-radius: 0.5rem;
   background: #47c4ab;
@@ -87,6 +88,8 @@ export const InputSearchContainer = styled.div`
   @media (min-width: 1400px) {
     margin-left: -20rem;
     justify-content: center;
+    position: relative;
+    z-index: 1;
   }
 `
 
@@ -114,14 +117,14 @@ export const Input = styled.input`
 
 export const ImageContainer = styled.div`
   width: min-content;
-  border: 1px solid orange;
   position: relative;
-  margin-top: -25rem;
+
   z-index: 0;
 
   img {
     position: relative;
-    z-index: -1;
+    margin-top: -16rem;
+    right: -28rem;
   }
 
   @media (max-width: 1400px) {
