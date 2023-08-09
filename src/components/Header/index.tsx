@@ -1,5 +1,4 @@
 import React from 'react'
-import { Logo } from '../Logo'
 import {
   LeftContainer,
   LogoContainer,
@@ -15,6 +14,7 @@ import {
 } from './styles'
 import { OutlineButton } from '../OutlineButton'
 import { ContextExtendNavbar } from 'src/context/extend-navbar'
+import { Logo } from '../Logo'
 
 export const Header = () => {
   const [navbar, setNavbar] = React.useState<boolean>(false)

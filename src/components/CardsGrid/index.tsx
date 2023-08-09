@@ -2,16 +2,18 @@ import {
   ServiceCardContainer,
   ServiceCardContent,
   ServiceCardHeader,
+  ServiceCardSpan,
+  ServiceCardTitle,
 } from './styles'
-import { Card } from '../Card'
+import { Card } from '@/components/Card'
 import { CalendarCheck, Search, ThumbsUp } from 'lucide-react'
 
 export const ServiceCardSection = () => {
   return (
     <ServiceCardContainer data-testid="service-card-container">
       <ServiceCardHeader data-testid="service-card-header">
-        <span>Serviços</span>
-        <h2>Nossas soluções para você!</h2>
+        <ServiceCardSpan>Serviços</ServiceCardSpan>
+        <ServiceCardTitle>Nossas soluções para você!</ServiceCardTitle>
       </ServiceCardHeader>
       <ServiceCardContent data-testid="service-card-content">
         <Card
