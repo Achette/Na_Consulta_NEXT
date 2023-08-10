@@ -12,7 +12,7 @@
 
 # Checklist
 
--   [ ] Atribuíu (asigned) a tarefa a si?
+-   [ ] Atribuíu (assigned) a tarefa a si?
 -   [ ] Atualizou a branch com a DEVELOP? Lembre-se de atualizar antes de mergear a branch
 
 # OPCIONAL
