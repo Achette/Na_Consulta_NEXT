@@ -7,7 +7,7 @@ export const HeaderSearchContainer = styled.div`
   margin-top: 5rem;
   padding: 5rem 0.25rem;
   color: ${(props) => props.theme.white};
-  position: relative;
+  position: unset;
   z-index: -1;
 
   @media (max-width: 1200px) {
@@ -44,7 +44,7 @@ export const HeadingContainer = styled.div`
 
   @media (min-width: 1400px) {
     margin-left: -20rem;
-    position: relative;
+    position: unset;
     z-index: 1;
   }
 `
@@ -88,7 +88,7 @@ export const InputSearchContainer = styled.div`
   @media (min-width: 1400px) {
     margin-left: -20rem;
     justify-content: center;
-    position: relative;
+    position: unset;
     z-index: 1;
   }
 `
@@ -117,7 +117,7 @@ export const Input = styled.input`
 
 export const ImageContainer = styled.div`
   width: min-content;
-  position: relative;
+  position: unset;
 
   z-index: 0;
 
