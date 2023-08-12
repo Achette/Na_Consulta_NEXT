@@ -12,8 +12,8 @@ import {
   OpenLinksButton,
   RightContainer,
 } from './styles'
-import { Logo } from '@/components/Logo'
-import { OutlineButton } from '@/components/OutlineButton'
+import { Logo } from '../Logo'
+import { OutlineButton } from '../OutlineButton'
 
 export const Header = () => {
   const [extendNavbar, setExtendNavbar] = React.useState<boolean>(false)

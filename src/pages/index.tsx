@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import { MainContainer } from './styles'
 import { Header } from '@/components/Header'
-import { ServiceCardSection } from '@/components/CardsGrid'
 import { SectionAbout } from '@/components/About'
+import { SearchHeader } from 'src/components/SearchHeader'
+import { ServiceCardSection } from 'src/components/CardsGrid'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
 
       <MainContainer>
         <Header />
+        <SearchHeader />
         <ServiceCardSection />
         <SectionAbout />
       </MainContainer>

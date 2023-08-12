@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const NavbarContainer = styled.nav<{ $extendNavbar?: boolean }>`
   width: 100%;
   height: ${(props) => (props.$extendNavbar ? '100vh' : '5rem')};
+  transition: all 0.08s ease-in;
+  position: fixed;
   background: ${(props) => props.theme['green-300']};
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -111,6 +113,7 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
 
   @media (min-width: 992px) {
     width: 20.625rem;

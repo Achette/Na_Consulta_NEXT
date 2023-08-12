@@ -10,6 +10,7 @@ export const ButtonContainer = styled.button`
   line-height: normal;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     display: none;
