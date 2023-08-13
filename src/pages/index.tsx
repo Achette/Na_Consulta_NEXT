@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import { SectionAbout } from '@/components/About'
 import { SearchHeader } from 'src/components/SearchHeader'
 import { ServiceCardSection } from 'src/components/CardsGrid'
+import { DepositionCard } from '@/components/DepositionCard'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <SearchHeader />
         <ServiceCardSection />
         <SectionAbout />
+        <DepositionCard />
       </MainContainer>
     </div>
   )
