@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import { MainContainer } from './styles'
 import { Header } from '@/components/Header'
+import { SearchHeader } from '@/components/SearchHeader'
+import { ServiceCardSection } from '@/components/CardsGrid'
 import { SectionAbout } from '@/components/About'
-import { SearchHeader } from 'src/components/SearchHeader'
-import { ServiceCardSection } from 'src/components/CardsGrid'
-import { DepositionCard } from '@/components/DepositionCard'
+import { DepositionSection } from '@/components/Depositions'
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
         <SearchHeader />
         <ServiceCardSection />
         <SectionAbout />
-        <DepositionCard />
+        <DepositionSection />
       </MainContainer>
     </div>
   )
