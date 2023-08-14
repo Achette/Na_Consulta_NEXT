@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const CardContainer = styled.div`
   display: flex;
-  width: 34rem;
-  height: 17rem;
+  min-width: 34rem;
+  height: auto;
   padding: 2rem;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +34,6 @@ export const AvatarContainer = styled.div`
 
 export const AvatarText = styled.p`
   color: ${(props) => props.theme['green-700']};
-  font-family: Poppins;
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
