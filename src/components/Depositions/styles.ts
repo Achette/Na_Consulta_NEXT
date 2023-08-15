@@ -7,13 +7,14 @@ export const DepositionsContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 7.75rem 0 7.75rem 8.5rem;
+  padding: 7.75rem 0 7.75rem 2rem;
   overflow-x: hidden;
 `
 
 export const HeadingContainer = styled.div`
-  width: 30rem;
+  width: 100%;
   height: 10rem;
+  padding-right: 1rem;
 `
 
 export const Header = styled.h2`
@@ -28,7 +29,7 @@ export const Header = styled.h2`
 export const Title = styled.h3`
   color: ${(props) => props.theme['green-700']};
   text-align: center;
-  font-size: 40px;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: normal;
 `
