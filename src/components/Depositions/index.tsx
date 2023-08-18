@@ -1,5 +1,6 @@
 import React from 'react'
 import { DepositionCard } from '../DepositionCard'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import {
   ArrowButton,
   ArrowContainer,
@@ -10,7 +11,6 @@ import {
   HeadingContainer,
   Title,
 } from './styles'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 export const DepositionSection = () => {
   const carroselSlider = React.useRef(null)
