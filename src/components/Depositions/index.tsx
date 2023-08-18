@@ -1,6 +1,8 @@
 import React from 'react'
 import { DepositionCard } from '../DepositionCard'
 import {
+  ArrowButton,
+  ArrowContainer,
   CardsContainer,
   CarrosselSlider,
   DepositionsContainer,
@@ -8,6 +10,7 @@ import {
   HeadingContainer,
   Title,
 } from './styles'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 export const DepositionSection = () => {
   const carroselSlider = React.useRef(null)
@@ -44,8 +47,14 @@ export const DepositionSection = () => {
           <DepositionCard />
         </CarrosselSlider>
       </CardsContainer>
-      <button onClick={(e) => handleLeft(e)}> Left </button>
-      <button onClick={(e) => handleRight(e)}> Right </button>
+      <ArrowContainer>
+        <ArrowButton onClick={(e) => handleLeft(e)}>
+          <ChevronLeft />
+        </ArrowButton>
+        <ArrowButton onClick={(e) => handleRight(e)}>
+          <ChevronRight />
+        </ArrowButton>
+      </ArrowContainer>
     </DepositionsContainer>
   )
 }

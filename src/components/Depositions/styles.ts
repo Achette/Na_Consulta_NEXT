@@ -32,6 +32,10 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 700;
   line-height: normal;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 `
 
 export const CardsContainer = styled.div`
@@ -47,4 +51,30 @@ export const CarrosselSlider = styled.div`
   flex-direction: row;
   overflow-x: hidden;
   scroll-behavior: smooth;
+`
+
+export const ArrowContainer = styled.span`
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+
+  @media (min-width: 768px) {
+    padding-left: 1rem;
+  }
+`
+export const ArrowButton = styled.button`
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${(props) => props.theme.white};
+  background-color: ${(props) => props.theme['green-700']};
+
+  @media (min-width: 768px) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `
