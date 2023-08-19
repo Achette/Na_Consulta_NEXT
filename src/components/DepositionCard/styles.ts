@@ -34,6 +34,10 @@ export const AvatarContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  img {
+    border-radius: 50%;
+  }
 `
 
 export const AvatarText = styled.p`
