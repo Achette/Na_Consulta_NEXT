@@ -1,6 +1,7 @@
 import React from 'react'
 import { DepositionCard } from '../DepositionCard'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { depositionsMock } from '@/mock/depositions/mock'
 import {
   ArrowButton,
   ArrowContainer,
@@ -33,18 +34,15 @@ export const DepositionSection = () => {
       </HeadingContainer>
       <CardsContainer>
         <CarrosselSlider ref={carroselSlider}>
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
-          <DepositionCard />
+          {depositionsMock &&
+            depositionsMock.map((item) => (
+              <DepositionCard
+                key={item.id}
+                name={item.name}
+                imgURL={item.imgURL}
+                deposition={item.deposition}
+              />
+            ))}
         </CarrosselSlider>
       </CardsContainer>
       <ArrowContainer>
