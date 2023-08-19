@@ -72,6 +72,8 @@ export const ArrowButton = styled.button`
   justify-content: center;
   color: ${(props) => props.theme.white};
   background-color: ${(props) => props.theme['green-700']};
+  outline: none;
+  border: none;
 
   @media (min-width: 768px) {
     width: 2.5rem;
