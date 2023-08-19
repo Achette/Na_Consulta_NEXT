@@ -27,7 +27,7 @@ export const DepositionSection = () => {
   }
 
   return (
-    <DepositionsContainer>
+    <DepositionsContainer data-testid="depositions-container">
       <HeadingContainer>
         <Header>depoimentos</Header>
         <Title>Opniões de nossos clientes</Title>
@@ -37,6 +37,7 @@ export const DepositionSection = () => {
           {depositionsMock &&
             depositionsMock.map((item) => (
               <DepositionCard
+                data-testid="carrossel-cards"
                 key={item.id}
                 name={item.name}
                 imgURL={item.imgURL}
@@ -45,7 +46,7 @@ export const DepositionSection = () => {
             ))}
         </CarrosselSlider>
       </CardsContainer>
-      <ArrowContainer>
+      <ArrowContainer data-testid="carrossel-controller">
         <ArrowButton onClick={(e) => handleLeft(e)}>
           <ChevronLeft />
         </ArrowButton>

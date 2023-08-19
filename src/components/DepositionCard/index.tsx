@@ -15,7 +15,7 @@ type CardProps = {
 
 export const DepositionCard = ({ name, imgURL, deposition }: CardProps) => {
   return (
-    <CardContainer>
+    <CardContainer data-testid="card-container">
       <ImageContainer>
         <Image
           src={'/assets/Aspas.svg'}
