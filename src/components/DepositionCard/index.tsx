@@ -7,7 +7,13 @@ import {
   TextContainer,
 } from './styles'
 
-export const DepositionCard = () => {
+type CardProps = {
+  name: string
+  imgURL: string
+  deposition: string
+}
+
+export const DepositionCard = ({ name, imgURL, deposition }: CardProps) => {
   return (
     <CardContainer>
       <ImageContainer>
@@ -18,20 +24,10 @@ export const DepositionCard = () => {
           height={31}
         />
       </ImageContainer>
-      <TextContainer>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim. Amet minim mollit non deserunt
-        ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
-        enim.
-      </TextContainer>
+      <TextContainer>{deposition}</TextContainer>
       <AvatarContainer>
-        <Image
-          src={'/assets/avatar.png'}
-          alt="Avatar image"
-          width={42}
-          height={42}
-        />
-        <AvatarText>Wanessa Souza</AvatarText>
+        <Image src={imgURL} alt="Avatar image" width={42} height={42} />
+        <AvatarText>{name}</AvatarText>
       </AvatarContainer>
     </CardContainer>
   )
