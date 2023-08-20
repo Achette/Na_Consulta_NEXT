@@ -1,7 +1,7 @@
 import React from 'react'
-import { DepositionCard } from '../DepositionCard'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { depositionsMock } from '@/mock/depositions/mock'
+import { CardProps, DepositionCard } from '../DepositionCard'
 import {
   ArrowButton,
   ArrowContainer,
@@ -15,6 +15,11 @@ import {
 
 export const DepositionSection = () => {
   const carroselSlider = React.useRef(null)
+  const [depositions, setDepositions] = React.useState<CardProps[]>()
+
+  React.useEffect(() => {
+    setDepositions(depositionsMock ?? [])
+  }, [])
 
   const handleLeft = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
@@ -33,9 +38,9 @@ export const DepositionSection = () => {
         <Title>Opniões de nossos clientes</Title>
       </HeadingContainer>
       <CardsContainer>
-        <CarrosselSlider ref={carroselSlider}>
-          {depositionsMock &&
-            depositionsMock.map((item) => (
+        <CarrosselSlider ref={carroselSlider} data-testid="carrossel-container">
+          {depositions &&
+            depositions.map((item) => (
               <DepositionCard
                 data-testid="carrossel-cards"
                 key={item.id}
@@ -47,10 +52,10 @@ export const DepositionSection = () => {
         </CarrosselSlider>
       </CardsContainer>
       <ArrowContainer data-testid="carrossel-controller">
-        <ArrowButton onClick={(e) => handleLeft(e)}>
+        <ArrowButton onClick={(e) => handleLeft(e)} data-testid="left-arrow">
           <ChevronLeft />
         </ArrowButton>
-        <ArrowButton onClick={(e) => handleRight(e)}>
+        <ArrowButton onClick={(e) => handleRight(e)} data-testid="right-arrow">
           <ChevronRight />
         </ArrowButton>
       </ArrowContainer>
