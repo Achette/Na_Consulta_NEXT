@@ -7,7 +7,8 @@ import {
   TextContainer,
 } from './styles'
 
-type CardProps = {
+export type CardProps = {
+  id?: number
   name: string
   imgURL: string
   deposition: string
