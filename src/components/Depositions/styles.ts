@@ -51,6 +51,7 @@ export const CarrosselSlider = styled.div`
   flex-direction: row;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  touch-action: auto;
 `
 
 export const ArrowContainer = styled.span`
