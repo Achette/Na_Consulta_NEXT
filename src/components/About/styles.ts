@@ -28,6 +28,7 @@ export const ContainerAbout = styled.section`
 export const ImageContainer = styled.div`
   width: 100%;
   position: unset;
+  z-index: -1;
 
   img {
     width: 100%;
