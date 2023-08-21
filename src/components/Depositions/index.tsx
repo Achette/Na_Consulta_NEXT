@@ -13,9 +13,16 @@ import {
   Title,
 } from './styles'
 
+export type DepositionProps = {
+  id: number
+  name: string
+  imgURL: string
+  deposition: string
+}
+
 export const DepositionSection = () => {
   const carroselSlider = React.useRef(null)
-  const [depositions, setDepositions] = React.useState<CardProps[]>()
+  const [depositions, setDepositions] = React.useState<DepositionProps[]>()
 
   React.useEffect(() => {
     setDepositions(depositionsMock ?? [])
@@ -44,9 +51,7 @@ export const DepositionSection = () => {
               <DepositionCard
                 data-testid="carrossel-cards"
                 key={item.id}
-                name={item.name}
-                imgURL={item.imgURL}
-                deposition={item.deposition}
+                deposition={item}
               />
             ))}
         </CarrosselSlider>

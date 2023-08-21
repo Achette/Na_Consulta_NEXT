@@ -6,15 +6,13 @@ import {
   ImageContainer,
   TextContainer,
 } from './styles'
+import { DepositionProps } from '../Depositions'
 
 export type CardProps = {
-  id?: number
-  name: string
-  imgURL: string
-  deposition: string
+  deposition: Partial<Omit<DepositionProps, 'id'>>
 }
 
-export const DepositionCard = ({ name, imgURL, deposition }: CardProps) => {
+export const DepositionCard = ({ deposition }: CardProps) => {
   return (
     <CardContainer data-testid="card-container">
       <ImageContainer>
@@ -25,10 +23,15 @@ export const DepositionCard = ({ name, imgURL, deposition }: CardProps) => {
           height={31}
         />
       </ImageContainer>
-      <TextContainer>{deposition}</TextContainer>
+      <TextContainer>{deposition.deposition}</TextContainer>
       <AvatarContainer>
-        <Image src={imgURL} alt="Avatar image" width={42} height={42} />
-        <AvatarText>{name}</AvatarText>
+        <Image
+          src={deposition.imgURL}
+          alt="Avatar image"
+          width={42}
+          height={42}
+        />
+        <AvatarText>{deposition.name}</AvatarText>
       </AvatarContainer>
     </CardContainer>
   )
