@@ -1,7 +1,7 @@
 import React from 'react'
+import { DepositionCard } from '../DepositionCard'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { depositionsMock } from '@/mock/depositions/mock'
-import { CardProps, DepositionCard } from '../DepositionCard'
 import {
   ArrowButton,
   ArrowContainer,
