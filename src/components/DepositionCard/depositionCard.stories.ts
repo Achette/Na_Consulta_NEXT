@@ -12,8 +12,6 @@ export default meta
 
 export const Primary: StoryObj<typeof DepositionCard> = {
   args: {
-    name: `${depositionsMock[0].name}`,
-    imgURL: `${depositionsMock[0].imgURL}`,
-    deposition: `${depositionsMock[0].deposition}`,
+    deposition: depositionsMock[0],
   },
 }
