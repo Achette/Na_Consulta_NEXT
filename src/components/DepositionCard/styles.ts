@@ -17,7 +17,7 @@ export const CardContainer = styled.div`
   }
 `
 export const ImageContainer = styled.div`
-  width: 2.75rem;
+  width: 2.81rem;
   height: 2rem;
 `
 export const TextContainer = styled.div`
