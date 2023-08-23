@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { Quote } from 'lucide-react'
+import { DepositionProps } from '../Depositions'
 import {
   AvatarContainer,
   AvatarText,
@@ -6,7 +8,6 @@ import {
   ImageContainer,
   TextContainer,
 } from './styles'
-import { DepositionProps } from '../Depositions'
 
 export type CardProps = {
   deposition: Partial<Omit<DepositionProps, 'id'>>
@@ -16,12 +17,7 @@ export const DepositionCard = ({ deposition }: CardProps) => {
   return (
     <CardContainer data-testid="card-container">
       <ImageContainer>
-        <Image
-          src={'/assets/Aspas.svg'}
-          alt="Aspas icon"
-          width={45}
-          height={31}
-        />
+        <Quote width={46} height={32} />
       </ImageContainer>
       <TextContainer>{deposition.deposition}</TextContainer>
       <AvatarContainer>
