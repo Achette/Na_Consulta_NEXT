@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SectionFooterContainer = styled.section`
+export const SectionFooterContainer = styled.footer`
   width: 100%;
   padding: 3.75rem 6.56rem;
   background: ${(props) => props.theme['green-100']};

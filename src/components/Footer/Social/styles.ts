@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SocialContainer = styled.div`
+export const SocialContainer = styled.section`
   max-width: 21.25rem;
   padding: 0;
 `
