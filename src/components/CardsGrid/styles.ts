@@ -54,8 +54,7 @@ export const ServiceCardContent = styled.div`
   margin-top: 1.5rem;
 
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
   }
 `
