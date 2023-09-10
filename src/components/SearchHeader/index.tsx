@@ -12,7 +12,10 @@ import {
 
 export const SearchHeader = () => {
   return (
-    <HeaderSearchContainer data-testid="header-search-container">
+    <HeaderSearchContainer
+      data-testid="header-search-container"
+      id="appointment"
+    >
       <>
         <HeadingContainer data-testid="heading-container">
           <HeaderSearchTitle>Procure por um especialista</HeaderSearchTitle>

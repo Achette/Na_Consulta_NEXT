@@ -10,7 +10,7 @@ import { CalendarCheck, Search, ThumbsUp } from 'lucide-react'
 
 export const ServiceCardSection = () => {
   return (
-    <ServiceCardContainer data-testid="service-card-container">
+    <ServiceCardContainer data-testid="service-card-container" id="service">
       <ServiceCardHeader data-testid="service-card-header">
         <ServiceCardSpan>Serviços</ServiceCardSpan>
         <ServiceCardTitle>Nossas soluções para você!</ServiceCardTitle>
