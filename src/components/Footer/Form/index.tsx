@@ -18,7 +18,7 @@ import {
 
 export const Form = () => {
   return (
-    <FormContainer>
+    <FormContainer data-testid="form-container">
       <FormHeader>
         <Mail />
         <FormTitle>Entre em contato com a gente!</FormTitle>
