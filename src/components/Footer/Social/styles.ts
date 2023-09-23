@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const SocialContainer = styled.section`
-  max-width: 21.25rem;
+  max-width: 18.25rem;
   padding: 0;
 `
 export const SocialHeader = styled.header`
@@ -12,17 +12,15 @@ export const SocialHeader = styled.header`
   gap: 1rem;
 
   svg {
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
     flex-shrink: 0;
   }
 `
-export const SocialLogoText = styled.h2`
+export const SocialLogoText = styled.h4`
   color: ${(props) => props.theme['green-700']};
-  font-size: 2.5rem;
-  font-style: normal;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: normal;
 
   @media (min-width: 992px) {
     font-size: 2.5rem;
@@ -30,7 +28,6 @@ export const SocialLogoText = styled.h2`
 `
 export const SocialSloganText = styled.p`
   font-size: 1rem;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.875rem;
   letter-spacing: -0.01rem;
