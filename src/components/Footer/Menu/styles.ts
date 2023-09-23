@@ -5,9 +5,9 @@ type MenuChildren = {
 }
 
 export const MenuContainer = styled.div`
-  max-width: 18rem;
+  max-width: 15rem;
   display: flex;
-  gap: 3.5rem;
+  gap: 3rem;
 `
 export const MenuBox = styled.div`
   display: flex;
