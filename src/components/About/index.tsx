@@ -17,7 +17,7 @@ export const SectionAbout = () => {
           src="/assets/doctor.png"
           alt="Doutor feliz com pacientes"
           layout="fill"
-          priority={false}
+          priority={true}
           data-testid="image"
         />
       </ImageContainer>
