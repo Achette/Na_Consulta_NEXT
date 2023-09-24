@@ -18,7 +18,7 @@ export const Social = () => {
         </SocialLogoText>
       </SocialHeader>
       <SocialSloganText data-testid="social-slogan-text">
-        O jeito fácil de agendar consultas médica
+        O jeito fácil de agendar consultas médicas
       </SocialSloganText>
       <SocailIcons data-testid="social-social-icons">
         <Facebook />
