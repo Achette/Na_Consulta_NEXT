@@ -16,5 +16,5 @@ export const Logo = () => {
         fill="white"
       />
     </svg>
-  );
-};
+  )
+}

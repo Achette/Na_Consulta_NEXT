@@ -39,7 +39,7 @@ export const DepositionSection = () => {
   }
 
   return (
-    <DepositionsContainer data-testid="depositions-container">
+    <DepositionsContainer data-testid="depositions-container" id="depositions">
       <HeadingContainer>
         <Header>depoimentos</Header>
         <Title>Opniões de nossos clientes</Title>

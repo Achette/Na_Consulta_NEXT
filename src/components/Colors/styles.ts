@@ -11,6 +11,7 @@ type ColorGridProps = {
     | '#3DCCB7'
     | '#008F79'
     | '#004238'
+    | '#DCE9E2'
 }
 
 export const ColorsGridContainer = styled.div<ColorGridProps>`
